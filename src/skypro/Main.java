@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         /// Создать внутри класса с методом main поле типа Employee[10], которое будет выполнять роль «хранилища» для записей о сотрудниках.
+
         Employee[] employeeInfo = new Employee[10];
         employeeInfo[0] = new Employee("Ivanov Ivan Ivanovich", 1, 32_000);
         employeeInfo[1] = new Employee("Ivanova Lyudmila Petrovna", 2, 21_654);
@@ -17,25 +18,31 @@ public class Main {
         employeeInfo[9] = new Employee("Lik Dmitrii Petrovich", 4, 73_987);
 
         /// Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).
+
         for (int i = 0; i < employeeInfo.length; i++) {
             System.out.println(employeeInfo[i]);
         }
 
         ///Посчитать сумму затрат на зарплаты в месяц.
+
         System.out.println("Salary sum: " + Employee.calculateSalarySum(employeeInfo) + " Rubles.");
 
         ///Найти сотрудника с минимальной зарплатой.
+
         System.out.println("Min salary: " + Employee.calculateMinSalary(employeeInfo) + " Rubles.");
 
         /// Найти сотрудника с максимальной зарплатой.
+
         System.out.println("Max salary: " + Employee.calculateMaxSalary(employeeInfo) + " Rubles.");
 
 
         /// Подсчитать среднее значение зарплат (можно использовать для этого метод из пункта b).
+
         System.out.println("Average salary: " + Employee.calculateAverageValue(employeeInfo) + " Rubles.");
 
 
         ///Получить Ф. И. О. всех сотрудников (вывести в консоль).
+
         for (int i = 0; i < employeeInfo.length; i++) {
             System.out.println("Employee names: " + employeeInfo[i].getFullName());
         }

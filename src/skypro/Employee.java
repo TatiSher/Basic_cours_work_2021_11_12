@@ -18,7 +18,6 @@ public class Employee {
 
     /// Добавить возможность получать значения полей из Employee (геттеры) для всех полей.
 
-
     public String getFullName() {
         return fullName;
     }
@@ -36,6 +35,7 @@ public class Employee {
     }
 
     /// Добавить возможность устанавливать значения полей отдела и зарплаты (сеттеры).
+
     public void setDepartment(int department) {
         this.department = department;
     }
@@ -54,15 +54,7 @@ public class Employee {
                 '}';
     }
 
-/// Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).
 
-//    public static String getEmployeeInformation(Employee[] employeeInfo) {
-//        String info = String.valueOf(0);
-//        for (int i = 0; i =< employeeInfo.length; i++) {
-//            info = employeeInfo[i].getFullName(), employeeInfo[i].getDepartment(), employeeInfo[i].getSalary(), employeeInfo[i].getId();
-//        }
-//        return info;
-//    }
 
     ///Посчитать сумму затрат на зарплаты в месяц.
 
@@ -86,6 +78,7 @@ public class Employee {
 
 
     ///Найти сотрудника с минимальной зарплатой.
+
     public static int calculateMinSalary(Employee[] employeeInfo) {
         int min = Integer.MAX_VALUE;
         for (Employee salary : employeeInfo) {
@@ -94,8 +87,8 @@ public class Employee {
         return min;
     }
 
-
     /// Найти сотрудника с максимальной зарплатой.
+
     public static int calculateMaxSalary(Employee[] employeeInfo) {
         int max = Integer.MIN_VALUE;
         for (Employee salary : employeeInfo) {
@@ -105,6 +98,7 @@ public class Employee {
     }
 
     /// Подсчитать среднее значение зарплат (можно использовать для этого метод из пункта b).
+
     public static int calculateAverageValue(Employee[] employeeInfo) {
         int sum = 0;
         for (Employee salary : employeeInfo) {
